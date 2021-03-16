@@ -22,13 +22,13 @@ npm run serve
 
 ## Migration files
 
-1、VuePersianDatetimePicker.vue: 
-    ① model=>modelValue 
-    ② emit(input) => this.$emit('update:modelValue',val) 
-    ③ Annotation this.$forceUpdate() // maybe will make a bug
-2、style.scss: [disabled]=>[disabled='true'] ... 
-'xxxdisabled' couldn't process
-3、_transitions.scss：-leave-to.. -enter => -leave-to.. -enter-from
+    1、VuePersianDatetimePicker.vue: 
+        ① model=>modelValue 
+        ② emit(input) => this.$emit('update:modelValue',val) 
+        ③ Annotation this.$forceUpdate() // maybe will make a bug
+    2、style.scss: [disabled]=>[disabled='true'] ... 
+    'xxxdisabled' couldn't process
+    3、_transitions.scss：-leave-to.. -enter => -leave-to.. -enter-from
 
 ### Usage
 
