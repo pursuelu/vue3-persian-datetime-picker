@@ -6,7 +6,7 @@
 > Migration from [vue-persian-datetime-picker](https://talkhabi.github.io/vue-persian-datetime-picker)
 
 
-## run this project
+## Run this project
 
 ```shell
 # 安装依赖
@@ -20,36 +20,12 @@ yarn serve
 npm run serve
 ```
 
-
-## Installation
-### browser
-```html
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script src="https://cdn.jsdelivr.net/npm/moment"></script>
-<script src="https://cdn.jsdelivr.net/npm/moment-jalaali@0.7.4/build/moment-jalaali.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue-persian-datetime-picker/dist/vue-persian-datetime-picker-browser.js"></script>
-<div id="app">
-    <date-picker v-model="date"></date-picker>
-</div>
-<script>
-    var app = new Vue({
-        el: '#app',
-        data: {
-            date: '2021/03/16'
-        },
-        components: {
-            DatePicker: VuePersianDatetimePicker
-        }
-    });
-</script>
-```
-
 ### Usage
 
 main.js
 ```javascript
-//...
-import VuePersianDatetimePicker from 'vue-persian-datetime-picker'
+import VuePersianDatetimePicker from '@/components/picker/VuePersianDatetimePicker.vue'
+// import VuePersianDatetimePicker from 'vue-persian-datetime-picker'
 import { createApp } from 'vue'
 import App from './App.vue'
 const app = createApp(App)
@@ -87,7 +63,9 @@ Or in component
 ## You can also set default values: 
 main.js
 ```javascript
-import VuePersianDatetimePicker from 'vue-persian-datetime-picker'
+
+// import VuePersianDatetimePicker from 'vue-persian-datetime-picker'
+import VuePersianDatetimePicker from '@/components/picker/VuePersianDatetimePicker.vue''
 import { createApp } from 'vue'
 import App from './App.vue'
 const app = createApp(App)
@@ -113,7 +91,7 @@ Then use in component
 <custom-date-picker v-model="date"></custom-date-picker>
 ```
 
-### [Click to see full documentation and demo](https://talkhabi.github.io/vue-persian-datetime-picker)
+### [Click to see prev full documentation and demo](https://talkhabi.github.io/vue-persian-datetime-picker)
 
 ## Built With
 * [Vue.js](https://vuejs.org/) - The Progressive JavaScript Framework.
